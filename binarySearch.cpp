@@ -6,7 +6,13 @@ using namespace std;
 int binarySearch(const int list[], int listLength, int searchItem);
 int main (){
   int array[] = {21, 12, 5, 3, 8};
-	int temp = 0;
+  int temp = 0;
+  int left, right, middle, value;
+  //int sorted[4];
+	
+   value = 3;
+   left = 0;
+   right = 4;
 	//loop to sort the array in ascending order
 	for (int i=0; i<5; i++){
 		for (int j=0; j<4; j++){
@@ -24,6 +30,8 @@ int main (){
 		
 	}
 	cout << endl;
+	//binary search call function
+	binarySearch(array, 4, value);
 
   return 0;
 }
